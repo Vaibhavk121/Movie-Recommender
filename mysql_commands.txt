@@ -1,0 +1,89 @@
+Mysql commands--
+
+--For creating database--
+
+create database movies;
+
+--For creating table--
+
+create table movietable
+(
+MOVIEID int(3) PRIMARY KEY,
+MOVIENAME varchar(70),
+TYPE varchar(30),
+DECADE varchar(4)
+);
+
+--Sample insertion--
+insert into movietable values(1,"THE DARKNIGHT","ACTION","10s");
+insert into movietable values(2,"MAD MAX","ACTION","10s");
+insert into movietable values(3,"JOHN WICK","ACTION","10s");
+insert into movietable values(4,"CASINO ROYALE","ACTION","00s");
+insert into movietable values(5,"300","ACTION","00s");
+insert into movietable values(6,"BLADE 2","ACTION","00s");
+insert into movietable values(7,"SPEED","ACTION","90s");
+insert into movietable values(8,"THE MATRIX","ACTION","90s");
+insert into movietable values(9,"FACE OFF","ACTION","90s");
+insert into movietable values(10,"FIRST BLOOD","ACTION","80s");
+insert into movietable values(11,"THE TERMINATOR","ACTION","80s");
+insert into movietable values(12,"DIE HARD","ACTION","80s");
+insert into movietable values(13,"THE WITCH","HORROR","10s");
+insert into movietable values(14,"HEREDITARY","HORROR","10s");
+insert into movietable values(15,"GET OUT","HORROR","10s");
+insert into movietable values(16,"SAW","HORROR","00s");
+insert into movietable values(17,"THE RING","HORROR","00s");
+insert into movietable values(18,"FINAL DESTINATION","HORROR","00s");
+insert into movietable values(19,"SCREAM","HORROR","90s");
+insert into movietable values(20,"CANDYMAN","HORROR","90s");
+insert into movietable values(21,"BLAIR WITCH PROJECT","HORROR","90s");
+insert into movietable values(22,"THE SHINING","HORROR","80s");
+insert into movietable values(23,"ALIEN","HORROR","80s");
+insert into movietable values(24,"THE THING","HORROR","80s");
+insert into movietable values(25,"LA LA LAND","ROMANCE","10S");
+insert into movietable values(26,"HER","ROMANCE","10S");
+insert into movietable values(27,"REMEMBER ME","ROMANCE","10S");
+insert into movietable values(28,"THE NOTEBOOK","ROMANCE","00S");
+insert into movietable values(29,"ATONEMENT","ROMANCE","00S");
+insert into movietable values(30,"MOULIN ROUGE","ROMANCE","00S");
+insert into movietable values(31,"BEFORE SUNRISE","ROMANCE","90S");
+insert into movietable values(32,"NOTTING HILL","ROMANCE","90S");
+insert into movietable values(33,"SLEEPLESS IN SEATTLE","ROMANCE","90S");
+insert into movietable values(34,"WHEN HARRY MET SALLY","ROMANCE","80S");
+insert into movietable values(35,"SAY ANYTHING","ROMANCE","80S");
+insert into movietable values(36,"WORKING GIRL","ROMANCE","80S");
+insert into movietable values(37,"PRISONERS","THRILLER","10s");
+insert into movietable values(38,"SHUTTER ISLAND","THRILLER","10s");
+insert into movietable values(39,"GONE GIRL","THRILLER","10s");
+insert into movietable values(40,"MEMENTO","THRILLER","00s");
+insert into movietable values(41,"THE PRESTIGE","THRILLER","00s");
+insert into movietable values(42,"DOMIE DARKO","THRILLER","00s");
+insert into movietable values(43,"SEVEN","THRILLER","00s");
+insert into movietable values(44,"MISERY","THRILLER","90s");
+insert into movietable values(45,"JACOB'S LADDER","THRILLER","90s");
+insert into movietable values(46,"DEAD CALM","THRILLER","90s");
+insert into movietable values(47,"THE VANISHING","THRILLER","80s");
+insert into movietable values(48,"THIEF","THRILLER","80s");
+insert into movietable values(49,"NICE GUY","COMEDY","10s");
+insert into movietable values(50,"GAME NIGHT","COMEDY","10s");
+insert into movietable values(51,"THE MUPPETS","COMEDY","10s");
+insert into movietable values(52,"CHEAPER BY DOZEN","COMEDY","00s");
+insert into movietable values(53,"SNATCH","COMEDY","00s");
+insert into movietable values(54,"SHAUN OF THE DEAD","COMEDY","00s");
+insert into movietable values(55,"DUMB & DUMBER","COMEDY","90s");
+insert into movietable values(56,"ACE VENTURE","COMEDY","90s");
+insert into movietable values(57,"GROUNDHOG DAY","COMEDY","90s");
+insert into movietable values(58,"THE BREAKFAST CLUB","COMEDY","80s");
+insert into movietable values(59,"FERRIS BUELLER'S DAY OFF","COMEDY","80s");
+insert into movietable values(60,"BACK TO THE FUTURE","COMEDY","80s");
+insert into movietable values(61,"THE SOCIAL NETWORK","DRAMA","10s");
+insert into movietable values(62,"MOONLIGHT","DRAMA","10s");
+insert into movietable values(63,"BOYHOOD","DRAMA","10s");
+insert into movietable values(64,"CHILDREN OF MEN","DRAMA","00s");
+insert into movietable values(65,"MELANCHOLIA","DRAMA","00s");
+insert into movietable values(66,"BLOOD DIAMOND","DRAMA","00s");
+insert into movietable values(67,"SCHINDLER'S LIST","DRAMA","90s");
+insert into movietable values(68,"GOODFELLAS","DRAMA","90s");
+insert into movietable values(69,"FORREST GUMP","DRAMA","90s");
+insert into movietable values(70,"STAND BY ME","DRAMA","80s");
+insert into movietable values(71,"BLADE RUNNER","DRAMA","80s");
+insert into movietable values(72,"RAIN MAN","DRAMA","80s");

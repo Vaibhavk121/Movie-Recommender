@@ -1,0 +1,95 @@
+import random
+import mysql.connector as con
+mycon=con.connect(host="localhost",user="root",passwd="",database="movies")
+cur=mycon.cursor()
+print("\N{movie camera}","WELCOME TO RANDOM MOVIE GENERATOR")
+print("SELECT FROM THE FOLLOWING")
+print("1. SELECT BY TYPE OF MOVIE ")
+print("2. SELECT BY DECADE")
+#FOR USER'S 1ST INPUT
+choice=int(input("ENTER YOUR CHOICE:"))
+if choice==1:
+    print("SELECT FROM THE FOLLOWING TYPE OF MOVIES")
+    print("1.ACTION")
+    print("2.HORROR")
+    print("3.ROMANCE")
+    print("4.THRILLER")
+    print("5.COMEDY")
+    print("6.DRAMA")
+    choice1=int(input("ENTER YOUR CHOICE:"))
+    if choice1==1:
+        cur.execute("select moviename from movietable where type='action'")
+        data=cur.fetchall()
+        i=random.choice(data)
+        print("THE BEST MOVIE FOR YOUR CHOICE IS :) ")
+        print("--",random.choice(i),"--")
+        cur.execute("select moviename from movietable where type='horror'")
+    elif choice1==2:    
+        data=cur.fetchall()
+        i=random.choice(data)
+        print("THE BEST MOVIE FOR YOUR CHOICE IS :) ")
+        print("--",random.choice(i),"--")
+    elif choice1==3:
+        cur.execute("select moviename from movietable where type='romance'")
+        data=cur.fetchall()
+        i=random.choice(data)
+        print("THE BEST MOVIE FOR YOUR CHOICE IS :) ")
+        print("--",random.choice(i),"--")
+    elif choice1==4:
+        cur.execute("select moviename from movietable where type='thriller'")
+        data=cur.fetchall()
+        i=random.choice(data)
+        print("THE BEST MOVIE FOR YOUR CHOICE IS :) ")
+        print("--",random.choice(i),"--")
+    elif choice1==5:
+        cur.execute("select moviename from movietable where type='comedy'")
+        data=cur.fetchall()
+        i=random.choice(data)
+        print("THE BEST MOVIE FOR YOUR CHOICE IS :) ")
+        print("--",random.choice(i),"--")
+    elif choice1==6:
+        cur.execute("select moviename from movietable where type='drama'")
+        data=cur.fetchall()
+        i=random.choice(data)
+        print("THE BEST MOVIE FOR YOUR CHOICE IS :) ")
+        print("--",random.choice(i),"--")
+    else:
+        print("PLEASE SELECT FROM 1 TO 6:)")
+        print("DON'T FORGET TO TAKE YOUR POPCORNS")
+elif choice==2:
+    print("SELECT FROM THE FOLLOWING DECADE")
+    print("1. 2010-2020")
+    print("2. 2000-2010")
+    print("3. 1990-2000")
+    print("4. 1980-1990")
+    choice2=int(input("ENTER YOUR CHOICE:"))
+    if choice2==1:
+        cur.execute("select moviename from movietable where decade='10s' anddecade='10S'")
+        data=cur.fetchall()
+        i=random.choice(data)
+        print("THE BEST MOVIE FOR YOUR CHOICE IS :) ")
+        print("--",random.choice(i),"--")
+    elif choice2==2:
+        cur.execute("select moviename from movietable where decade='00s' anddecade='00S'")
+        data=cur.fetchall()
+        i=random.choice(data)
+        print("THE BEST MOVIE FOR YOUR CHOICE IS :) ")
+        print("--",random.choice(i),"--")
+    elif choice2==3:
+        cur.execute("select moviename from movietable where decade='90s' anddecade='90S'")
+        data=cur.fetchall()
+        i=random.choice(data)
+        print("THE BEST MOVIE FOR YOUR CHOICE IS :) ")
+        print("--",random.choice(i),"--")
+    elif choice2==4:
+        cur.execute("select moviename from movietable where decade='80s' anddecade='80S'")
+        data=cur.fetchall()
+        i=random.choice(data)
+        print("THE BEST MOVIE FOR YOUR CHOICE IS :) ")
+        print("--",random.choice(i),"--")
+    else:
+        print("PLEASE SELECT FROM 1 TO 4 :)")
+        print("DON'T FORGET TO TAKE YOUR POPCORNS")
+else:
+    print("SELECT FROM 1 OR 2:)")
+    mycon.close()
